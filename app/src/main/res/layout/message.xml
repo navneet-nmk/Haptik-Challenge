@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+                android:padding="5dp"
+             tools:context="com.teenvan.haptik.MainActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="2dp"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:background="@drawable/shape_bg_incoming_bubble"
+                    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+    />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/userImage"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameText"
+        android:id="@+id/bodyText"
+        android:textSize="18sp"
+        android:text="Body"
+        android:layout_toLeftOf="@id/userImage"
+        android:layout_alignParentLeft="true"
+    />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bodyText"
+            android:text="Favorite"
+            android:id="@+id/favoriteBox"
+        />
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
